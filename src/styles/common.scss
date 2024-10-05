@@ -1,0 +1,240 @@
+@import 'fonts.scss';
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --orange-color: #eb5757;
+  --green-color: #27ae60;
+  --gray-color: #828282;
+  --lightgray-color: #f2f2f2;
+}
+body {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+}
+p {
+  margin: 0%;
+}
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-SF-UI-Text {
+  &--light {
+    font-family: 'SF UI Text';
+  }
+  &--semibold {
+    font-family: 'SF UI Text Semibold';
+  }
+}
+.font-SF-Pro-Display {
+  &--light {
+    font-family: 'SF Pro Display';
+  }
+  &--semibold {
+    font-family: 'SF Pro Display Semibold';
+  }
+}
+.crossed {
+  color: var(--gray-color);
+  text-decoration: line-through;
+}
+.header {
+  @media (max-width: 1920px) {
+    padding: 32px 216px;
+  }
+  @media (max-width: 1440px) {
+    padding: 32px 140px;
+  }
+  @media (max-width: 1024px) {
+    padding: 32px 80px;
+  }
+  @media (max-width: 425px) {
+    padding: 32px 50px;
+  }
+  @media (max-width: 376px) {
+    padding: 32px 20px;
+  }
+  &__navigator-list {
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  &__navigator-item {
+    display: inline;
+  }
+  &__navigator-link {
+    text-decoration: none;
+    color: var(--gray-color);
+    cursor: pointer;
+  }
+  &__navigator-link:active{
+    color: var(--black-color);
+  }
+  &__navigator-separator{
+    margin: 0 14px;
+  }
+}
+.title {
+  @media (max-width: 1920px) {
+    padding: 0px 152px 0px 216px;
+  }
+  @media (max-width: 1440px) {
+    padding: 0px 140px 0px 140px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0px 80px 0px 80px;
+  }
+  @media (max-width: 425px) {
+    padding: 0px 50px 0px 50px;
+  }
+  @media (max-width: 376px) {
+    padding: 0px 20px 0px 20px;
+  }
+  &__text {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+.сontent {
+  @media (max-width: 1920px) {
+    padding: 37px 152px 29px 216px;
+  }
+  @media (max-width: 1440px) {
+    padding: 37px 140px 29px 140px;
+  }
+  @media (max-width: 1024px) {
+    padding: 37px 80px 29px 80px;
+  }
+  @media (max-width: 425px) {
+    padding: 37px 50px 29px 50px;
+  }
+  @media (max-width: 376px) {
+    padding: 37px 20px 29px 20px;
+  }
+}
+.selectors{
+  padding-bottom: 1.26rem;
+  &__body {
+    min-width: 288px;
+    min-height: 82px;
+    display: inline-block;
+    margin-right: 24px;
+  }
+  &__label {
+    padding: 0px 0px 6px 16px;
+    font-size: 12px;
+    width: 100%;
+    color: var(--gray-color);
+  }
+  &__selector {
+    width: 100%;
+    background-color: var(--lightgray-color);
+    min-width: 288px;
+    min-height: 40px;
+    border-color: transparent;
+    font-size: 14px;
+    text-indent: 15px;
+    
+    appearance: none;
+    background-image: url("../../public/img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.14rem top 1.00rem;
+    background-size: 17.41px, 10.12px;
+  }
+  &__selector:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  &__option {
+    border-radius: 0px;
+  }
+}
+.table{
+  display: flex;
+  flex-wrap: wrap;
+  &__card {
+    width: 336px;
+    min-height: 352px;
+    border: 1px solid var(--lightgray-color);
+    margin-right: 2.85rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.product-card {
+  &__discount {
+    padding: 0.45rem 0rem 0rem 0rem;
+  }
+  &__discount-text {
+    margin: 0%;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 14px;
+    width: 5.063rem;
+    height: 1.5rem;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    position: absolute; 
+    z-index: 2;
+  }
+  &__image-field {
+    width: 100%;
+    height: 14.813rem;
+    padding-bottom: 0.5rem;
+  }
+  &__image {
+    width: 14.875rem;
+    height: 14.813rem;
+    margin: 0rem 3.063rem;
+  }
+  &__info-field {
+    padding: 0.5rem;
+  }
+  &__code {
+    font-size: 10px;
+    padding: 0.55rem 0.2rem;
+    min-height: 0.75rem;
+  }
+  &__name {
+    font-size: 16px;
+    padding: 0.1rem 0.2rem;
+  }
+  &__order {
+    padding: 0.13rem;
+  }
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__prices {
+    display: inline;
+  }
+  &__price {
+    display: inline-block;
+    font-size: 16px;
+    padding-top: 0.5rem;
+    padding-right: 0.7rem;
+  }
+  &__button {
+    margin: 0px 8px;
+    background-color: var(--white-color);
+    border: 0px;
+  }
+  &__button:hover {
+    background-color: var(--lightgray-color);
+  }
+  &__button:active {
+    background-color: var(--orange-color);
+  }
+  &__image {
+    width: 18.06px;
+    height: 18px;
+    padding-top: 0.3rem;
+  }
+}
