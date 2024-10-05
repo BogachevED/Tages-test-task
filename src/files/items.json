@@ -8,7 +8,7 @@
       "current_price": 355
     },
     "image": {
-      "url": "../img/gr_product1.png"
+      "url": "./img/gr_product1.png"
     },
     "material": 1
   },
@@ -21,7 +21,7 @@
       "current_price": 355.555
     },
     "image": {
-      "url": "../img/gr_product2.png"
+      "url": "./img/gr_product2.png"
     },
     "material": 2
   },
@@ -34,7 +34,7 @@
       "current_price": 75
     },
     "image": {
-      "url": "../img/gr_product3.png"
+      "url": "./img/gr_product3.png"
     },
     "material": 2
   },
@@ -47,7 +47,7 @@
       "current_price": 200
     },
     "image": {
-      "url": "../img/gr_product4.png"
+      "url": "./img/gr_product4.png"
     },
     "material": 2
   },
@@ -60,7 +60,7 @@
       "current_price": 720
     },
     "image": {
-      "url": "../img/gr_product1.png"
+      "url": "./img/gr_product1.png"
     },
     "material": 1
   },
@@ -73,7 +73,7 @@
       "current_price": 355.555
     },
     "image": {
-      "url": "../img/gr_product2.png"
+      "url": "./img/gr_product2.png"
     },
     "material": 2
   },
@@ -86,7 +86,7 @@
       "current_price": 75
     },
     "image": {
-      "url": "../img/gr_product3.png"
+      "url": "./img/gr_product3.png"
     },
     "material": 2
   },
@@ -99,7 +99,7 @@
       "current_price": 900
     },
     "image": {
-      "url": "../img/gr_product4.png"
+      "url": "./img/gr_product4.png"
     },
     "material": 2
   }
